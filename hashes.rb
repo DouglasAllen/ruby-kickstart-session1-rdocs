@@ -1,5 +1,5 @@
 =begin rdoc
-===
+====================================================================================================================
     "Note: You may just copy these into irb or pry.
     Be careful though, putting too much in at
     once can hang IRB. I would say the limit is
@@ -19,11 +19,15 @@
     Don\'t wory, they won\'t be evaluated.
 
     Also the methods at the top are just dummys
-    for the rdoc generator to find this information.
+    for the rdoc generator to find this information."
 
-    http://ruby-doc.org/core/classes/Hash.html"
+====================================================================================================================
 
-    '=====  Initializing  =====
+    'Hash class and instance methods
+
+    http://ruby-doc.org/core/classes/Hash.html
+
+    =====  Initializing  =====
 
     populated;'
 
@@ -41,6 +45,7 @@
     Hash.new                    
     '=> {}'
 
+====================================================================================================================
 
     '=====  Nonexistent Keys  =====
 
@@ -81,6 +86,7 @@
                  "duder",
                  "el duderino"]}'
 
+====================================================================================================================
 
     '=====  Access and Assign  =====
 
@@ -113,6 +119,7 @@
     hash.values_at 'j' , 'e' , 'i' , :x   
     '=> [10, 5, 9, nil]'
 
+====================================================================================================================
     'More interesting options with fetch 
     (think how this might be helpful in param default values).'
 
@@ -125,6 +132,8 @@
 
     hash.fetch("z") { |el| "go fish, #{el}"}    
     '=> "go fish, z"'
+
+====================================================================================================================
 
     'Sometimes you might use has_key to check for a key,
     for example, if you\'re using an init block.'
@@ -159,12 +168,13 @@
     hash.has_value?(999)                        
     '=> false'
 
+====================================================================================================================
 
     '=====  Removal  =====
 
     Delete accepts a key and returns its value.
     You can give a block that will be invoked and returned
-    in the event that the keyt o delete was not seen.'
+    in the event that the key to delete was not seen.'
 
     hash = Hash[*Array(1..10)]                  
     '=> {1=>2, 3=>4, 5=>6, 7=>8, 9=>10}'
@@ -196,6 +206,7 @@
     hash                                        
     '=> {1=>2, 3=>4, 7=>8}'
 
+====================================================================================================================
 
     '=====  Iterating  =====
 
@@ -214,6 +225,7 @@
          "Paris is in France",
          "Ramstein is in Germany"]'
 
+====================================================================================================================
 
     '=====  Other Useful Methods  =====
 
@@ -254,6 +266,7 @@
     Hash.new.empty?               
     '=> true'
 
+====================================================================================================================
 
     hash = Hash[*Array(1..10)]
     hash                          
@@ -292,7 +305,7 @@
          [:Paris, :France],
          [:Ramstein, :Germany]]'
 
-
+====================================================================================================================
 ===
 =end
-def hashes;end
+def hashes?( Everything is an Object except Basic Object maybe? );end
