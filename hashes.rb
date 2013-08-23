@@ -2,7 +2,8 @@
 ===
     "Note: You may just copy these into irb or pry.
     Be careful though, putting too much in at
-    once can hang IRB.
+    once can hang IRB. I would say the limit is
+    a page full.
 
     Watch out for tabs too if you have tab
     completion set.
